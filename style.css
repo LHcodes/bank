@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');/*fonte 1*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');/*fonte2*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1:#312F6E;
+    --cor2:#784A79;
+
+    --font1:'Nanum Gothic', sans-serif;
+    --font2:'Hind', sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(50deg, var(--cor1), var(--cor2));
+    overflow-x: hidden;
+
+}
+
+header {
+    height: 150px;
+    width: 100vw;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    
+}
+
+.nav_all{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+
+    height: 150px;
+    width: 100px;
+}
+
+.menu_header {
+    padding-bottom: 10px;
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.menu_header a:hover{
+    color: rgb(46, 22, 46);
+    border-bottom: solid black;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.header_bts{
+    display: flex;
+    align-items: end;
+}
+
+.bt_log1{
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1em;
+}
+.bt_log1:hover{
+    color: rgb(46, 22, 46);
+}
+
+.bt_log2{
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #4D4D4D;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    
+}
+.bt_log2:hover{
+    color: #a200ff;
+}
+.bt_log1:active, .bt_log2:active{
+    background-color: rgba(255, 255, 255, 0.506);
+}
+
+
