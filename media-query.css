@@ -30,9 +30,9 @@
 
 @media screen and (max-width: 760px) {
 
-    main {
-        
-    }
+   main{
+    width: 350px;
+   }
     
     
 
@@ -96,6 +96,8 @@
     .content_card {
         width: 400px;
     }
+
+    
 
     footer{
         margin-top: 70px;
