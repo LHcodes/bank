@@ -29,6 +29,10 @@
 }
 
 @media screen and (max-width: 760px) {
+
+    main {
+        
+    }
     
     
 
@@ -49,8 +53,32 @@
     .all_content{
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 385px;
         margin: auto;
+        
+    }
+
+    .content_button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons {
+        margin-top: 20px;
+    }
+
+    .content_text h1{
+        font-size: 3em;
+    }
+    
+    .content_text p {
+        font-size: 1.5em;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
     }
 
 
@@ -61,12 +89,17 @@
         margin: auto;
     }
 
+    .content_text{
+        max-width: 350px;
+    }
+
     .content_card {
         width: 400px;
     }
 
     footer{
         margin-top: 70px;
+        height: 300px;
     }
 
 
