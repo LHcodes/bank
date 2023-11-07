@@ -26,6 +26,19 @@ html, body{
 
 }
 
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #6e6ea9;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
 header {
     height: 150px;
     width: 100vw;
@@ -120,12 +133,13 @@ header {
 /*corpo*/
 
 main{
-    width: 1200px;
+   max-width: 1000px;
     margin: auto;
 }
 
 section {
     margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 .content1{
@@ -138,7 +152,7 @@ section {
     
 }
 
-.all_content .content_text h1{
+.content_text h1{
     font-family: var(--font2);
     font-size: 5em;
     color: rgba(255, 255, 255, 0.703);
@@ -146,7 +160,7 @@ section {
 
 }
 
-.all_content .content_text p{
+.content_text p{
     font-family: var(--font1);
     font-size: 2em;
     color: #b9b6b6;
@@ -209,6 +223,7 @@ section {
     font-size: 2.5em;
     width: 20px;
     color: #a200ff;
+    transition-duration: 0.7s;
 }
 
 #abrir_conta h2{
@@ -224,8 +239,55 @@ section {
 
 .icons img:hover{
     border-bottom: 1px solid rgb(134, 16, 149);
-    box-shadow: 0px 1px 5px purple;
+    box-shadow: 0px 1px 5px rgb(60, 58, 60);
     border-radius: 50%;
     cursor: pointer;
 }
 
+.container2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container2 .content_text h1{
+    line-height: 60px;
+}
+.container2 .content_text p {
+    margin-top: 20px;
+
+}
+
+.phone img{
+    width: 400px;
+}
+
+.content_ico div{
+    display: flex;
+    align-items: center;
+    
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.227);
+    margin: 30px 0;
+}
+
+.content_ico span{
+    font-size: 3.5em;
+    color: rgba(236, 231, 231, 0.625);
+    margin-right: 10px;
+}
+
+.content_ico p {
+    font-size: 1.3em;
+    color: rgb(140, 140, 140);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+footer img{
+    height: 90px;
+    
+}
