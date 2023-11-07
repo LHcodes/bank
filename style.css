@@ -26,6 +26,7 @@ html, body{
 
 }
 
+
 html ::-webkit-scrollbar {
     width: 10px;
 }
@@ -128,6 +129,44 @@ header {
 }
 .bt_log1:active, .bt_log2:active{
     background-color: rgba(255, 255, 255, 0.506);
+}
+
+.menu_burger span{
+    font-size: 3em;
+    color: white;
+    display: none;
+}
+
+.menu_mobile {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #1d1d1d;
+    
+    
+}
+
+.menu_mobile ul{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: var(--font2);
+    font-weight: bolder;
+    font-size: 2.5em;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.menu_mobile li{
+    margin-top: 20px;
+}
+
+.menu_mobile li:hover{
+    color: #a200ff;
+    cursor: pointer;
+
+
 }
 
 /*corpo*/

@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/logo_bank.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--icone-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
     <title>Bank of Dev</title>
 </head>
 <body>
@@ -26,8 +27,23 @@
                 <button class="bt_log1">Entrar</button>
                 <button class="bt_log2">Abrir conta</button>
             </div>
+            <div class="menu_burger">
+                <span id="botao" class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            
         </nav>
+        
+        
     </header>
+    <div class="menu_mobile" id="menu">
+        <ul>
+            <li>Entrar</li>
+            <li>Criar conta</li>
+            <li>Contatos</li>
+        </ul>
+    </div>
     <main>
         <section class="container1">
             <div class="content1">
@@ -99,6 +115,24 @@
     <footer>
         <a href=""><img src="img/branco.png" alt=""></a>
     </footer>
+
+    <script>
+        const bt = document.getElementById('botao')
+        const menu = document.getElementById('menu')
+
+        bt.addEventListener('click', clicar)
+
+        function clicar(){
+            if(menu.style.display == 'none'){
+                menu.style.display = 'block'
+                bt.innerText = 'close'
+            } else {
+                menu.style.display = 'none'
+                bt.innerText = 'menu'
+            }
+        }
+
+    </script>
     
 </body>
 </html>
