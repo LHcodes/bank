@@ -33,6 +33,14 @@
    main{
     width: 350px;
    }
+
+   section img{
+    width: 350px;
+   }
+   .phone img {
+    width: 350px;
+    margin-top: 40px;
+   }
     
     
 
@@ -103,6 +111,8 @@
         margin-top: 70px;
         height: 300px;
     }
+
+    
 
 
 }
